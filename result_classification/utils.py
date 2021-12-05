@@ -1,15 +1,12 @@
 # 数据相关的配置
-# event_type = "example_dis"
-
 train_file_path = 'data/train.txt'
 test_file_path = 'data/test.txt'
-# dev_file_path = "./data/%s.dev" % event_type
 
 # 标注的原始excel实体关系表
 re_excel = r'data\实体关系表.xlsx'
 
 # 测试模型性能的数据集
-evaluate_file = r'data\origin_data\test_已标注.txt'
+evaluate_file = r'data\origin_data\test_labeled.txt'
 
 # 实体关系类型
 json_label2id = './data/rel_dict.json'

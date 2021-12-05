@@ -3,8 +3,8 @@ from openpyxl import load_workbook
 file1 = load_workbook(r'../实体关系表.xlsx')
 ac_sheet1 = file1['Sheet1']
 
-f1 = open(r'train_已标注.txt', 'r', encoding='utf-8')
-f2 = open(r'test_已标注.txt', 'r', encoding='utf-8')
+f1 = open(r'train_labeled.txt', 'r', encoding='utf-8')
+f2 = open(r'test_labeled.txt', 'r', encoding='utf-8')
 def get_sen(f):
     sen = []
     while True:

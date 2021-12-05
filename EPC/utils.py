@@ -1,9 +1,6 @@
 # 数据相关的配置
-# event_type = "example_dis"
-
 train_file_path = 'data/train.txt'
 test_file_path = 'data/test.txt'
-# dev_file_path = "./data/%s.dev" % event_type
 
 # 标注的原始excel实体关系表
 re_excel = r'data\实体关系表.xlsx'
