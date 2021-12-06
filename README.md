@@ -124,10 +124,10 @@ Folder structure as below:
 ```
 
 
-code based on BERT-WWM for chinese, need to download the pretraining model into folder "bert_wwm", see: https://github.com/tiffen/Chinese-BERT-wwm
+code based on BERT-WWM for chinese, need to download the pre-training model into folder `bert_wwm`, see: https://github.com/tiffen/Chinese-BERT-wwm
 
 
-Project file specification as above, use the format under "\data" folder for training dataset, change parameter configurations in the "utils.py" and execute below:
+Project file specification as above, use the format under `\data` folder for training dataset, change parameter configurations in the `utils.py` and execute below:
 
 ```shell
 > cd EPC 
@@ -141,6 +141,5 @@ the above will train the model
 > python model_predict.py
 ```
 
-
-the above will make predifctions, i.e., generate entity roles or entity pair relations, input format see ".\EPC\data\origin_data\test_labeled.txt"
-you can also modify "model_predict.py" to make other types of predictions.
+the above will make predifctions, i.e., generate entity roles or entity pair relations, input format see `.\EPC\data\origin_data\test_labeled.txt`
+you can also modify `model_predict.py` to make other types of predictions.
