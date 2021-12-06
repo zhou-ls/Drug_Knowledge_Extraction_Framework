@@ -1,23 +1,24 @@
-# 药品知识抽取框架
+**[English](https://github.com/zhou-ls/Drug_Knowledge_Extraction_Framework)** | **[中文](https://github.com/zhou-ls/Drug_Knowledge_Extraction_Framework/blob/main/README_zh.md)**
 
-目前放置 **EPC** 及 **药品相互作用结果的细粒度关系抽取**的代码
+# Drug knowledge extraction framework
 
-文件目录如下：
+Code available for entity pair calibration and fine-grained drug interaction extraction.
+Folder structure as below:
 
 ```shell
 ├─EPC
-│  │  att.py  # 注意力机制
-│  │  data_into_train_test.py # 得到训练数据
-│  │  draw_picture.py  # 训练过程中画图
-│  │  load_data.py  # 加载数据
-│  │  model_predict.py  # 模型预测
-│  │  model_train.py  # 模型训练
-│  │  relation_bar_chart.py # 实体关系分析
-│  │  requirements.txt  # 项目依赖模块
-│  │  tmp_graph11  # 句向量生成，初次使用加载graph,并生成该文件，再次使用时加快速度
-│  │  utils.py  # 模型配置
+│  │  att.py  # attention mechanism
+│  │  data_into_train_test.py # get train data
+│  │  draw_picture.py  # paint while training
+│  │  load_data.py  # load dataset
+│  │  model_predict.py  # make predictions
+│  │  model_train.py  # train the model 
+│  │  relation_bar_chart.py # entity relation extraction
+│  │  requirements.txt  # dependants
+│  │  tmp_graph11  # create sentence vectors, first usage takes longer time
+│  │  utils.py  # model config
 │  │  
-│  ├─bert_wwm  # bert_wwm配置
+│  ├─bert_wwm  # bertwwm config
 │  │  │  args.py
 │  │  │  extract_feature.py
 │  │  │  graph.py
@@ -34,25 +35,25 @@
 │  │         vocab.txt             
 │  │          
 │  ├─data
-│  │  │  rel_dict.json # 关系类型
-│  │  │  test.txt # 测试集
-│  │  │  train.txt # 训练集
-│  │  │  实体关系表.xlsx
+│  │  │  rel_dict.json # relation types
+│  │  │  test.txt # test dataset
+│  │  │  train.txt # train dataset
+│  │  │  实体关系表.xlsx #
 │  │  │  
-│  │  └─origin_data  # 原始人工标注数据
+│  │  └─origin_data  # original manually labelled data
 │  │          test_labeled.txt
 │  │          train_labeled.txt
 │  │          write_excel.py
 │  │          
-│  ├─logs # 训练输出log
+│  ├─logs # log output
 │  │  └─bert_wwm
 │  │          train.log
 │  │          
-│  ├─models # 保存的模型文件
+│  ├─models # saved models
 │  │  └─bert_wwm
 │  │          ex-rel-12-0.9880.h5
 │  │          
-│  └─png # 保存图片
+│  └─png # saved pics
 │      ├─bar_chart
 │      │      bar_chart.png
 │      │      
@@ -63,18 +64,18 @@
 │              bert_wwm-p-r.png
 │              
 └─result_classification
-    │  att.py # 注意力机制
-    │  data_into_train_test.py # 得到训练数据
-    │  draw_picture.py # 训练过程中画图
-    │  load_data.py # 加载数据
-    │  model_predict.py  # 模型预测
-    │  model_train.py # 模型训练
-    │  relation_bar_chart.py # 实体关系分析
-    │  requirements.txt # 项目依赖模块
-    │  tmp_graph11 # 句向量生成，初次使用加载graph,并生成该文件，再次使用时加快速度
-    │  utils.py # 模型配置
+    │  att.py # attention mechianism
+    │  data_into_train_test.py # get training dataset
+    │  draw_picture.py # draw while training
+    │  load_data.py # load dataset
+    │  model_predict.py  # make predictions
+    │  model_train.py # model training
+    │  relation_bar_chart.py # relation analysis
+    │  requirements.txt # dependants
+    │  tmp_graph11 # create sentence vectors, first usage takes longer time
+    │  utils.py # model config
     │  
-    ├─bert_wwm # bert_wwm配置
+    ├─bert_wwm # bert_wwmconfig
     │  │  args.py
     │  │  extract_feature.py
     │  │  graph.py
@@ -92,25 +93,25 @@
     │        
     │          
     ├─data
-    │  │  rel_dict.json # 关系类型
-    │  │  test.txt # 测试集
-    │  │  train.txt # 训练集
+    │  │  rel_dict.json # relation types
+    │  │  test.txt # test dataset
+    │  │  train.txt # train dataset
     │  │  实体关系表.xlsx
     │  │  
-    │  └─origin_data # 原始标注数据
+    │  └─origin_data # original manually labelled data
     │          test_labeled.txt
     │          train_labeled.txt
     │          write_excel.py
     │          
-    ├─logs # 训练输出log
+    ├─logs # log output
     │  └─bert_wwm
     │          train.log
     │          
-    ├─models # 保存的模型文件
+    ├─models # saved models
     │  └─bert_wwm
     │          ex-rel-03-0.8465.h5
     │          
-    └─png # 保存图片
+    └─png # saved pics
         ├─bar_chart
         │      bar_chart.png
         │      
@@ -122,20 +123,24 @@
 
 ```
 
-代码基于BERT-WWM中文预训练模型，需要下载BERT-WWM的中文预训练模型放入bert_wwm目录中，参考：https://github.com/tiffen/Chinese-BERT-wwm
 
-相关文件说明如上面文件中注释部分所示，按照 `\data`目录下训练集的格式获取相关数据集，并在`utils.py`执行中按照实际情况修改相关参数，然后执行
+code based on BERT-WWM for chinese, need to download the pretraining model into folder "bert_wwm", see: https://github.com/tiffen/Chinese-BERT-wwm
+
+
+Project file specification as above, use the format under "\data" folder for training dataset, change parameter configurations in the "utils.py" and execute below:
 
 ```shell
 > cd EPC 
 > python model_train.py
 ```
 
-即可训练模型，
+
+the above will train the model
 
 ```python
 > python model_predict.py
 ```
 
-即可进行模型预测输出，即输出实体的角色或实体对的关系，待预测输入的数据格式参考`.\EPC\data\origin_data\test_labeled.txt`目录下的文件格式，也可根据实际情况需要稍加修改`model_predict.py`，预测不同格式的文本
 
+the above will make predifctions, i.e., generate entity roles or entity pair relations, input format see ".\EPC\data\origin_data\test_labeled.txt"
+you can also modify "model_predict.py" to make other types of predictions.
