@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/bert" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/albert_zh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bert_wwm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ELECTRA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ernie" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/roberta" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.12 (sftp://lqx@10.162.32.157:4250/home/lqx/anaconda3/envs/roberta/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="format" value="GOOGLE" />
+    <option name="myDocStringFormat" value="Google" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
+  </component>
+</module>
