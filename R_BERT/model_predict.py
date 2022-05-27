@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/24 20:40
-# @Author : Jclian91
-# @File : model_predict.py
-# @Place : Yangpu, Shanghai
+
 import os
 import json
 import numpy as np

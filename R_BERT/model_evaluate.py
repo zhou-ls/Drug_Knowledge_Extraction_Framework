@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/24 20:50
-# @Author : Jclian91
-# @File : model_evaluate.py
-# @Place : Yangpu, Shanghai
+
 # 模型评估脚本
 import os
 import json

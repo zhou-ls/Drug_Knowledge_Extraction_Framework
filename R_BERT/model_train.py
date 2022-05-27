@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/24 18:24
-# @Author : Jclian91
-# @File : model_train.py
-# @Place : Yangpu, Shanghai
+
 import os
 import json
 # import tensorflow._api.v2.compat.v1 as tf

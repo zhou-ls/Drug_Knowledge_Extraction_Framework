@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/24 21:08
-# @Author : Jclian91
-# @File : config.py
-# @Place : Yangpu, Shanghai
+
 
 # dataset
 DATA_DIR = "./data/clinical-guidance-drug-drug2"

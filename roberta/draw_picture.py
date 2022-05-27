@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2020/10/29 16:24
-# @Author : zls
-# @File : draw_picture.py
+
 import matplotlib.pyplot as plt
 from sklearn.metrics import average_precision_score, precision_recall_curve
 from funcsigs import signature

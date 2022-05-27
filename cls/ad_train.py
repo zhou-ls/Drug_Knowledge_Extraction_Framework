@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2020/11/29 14:44
-# @Author : lensen
-# @File : ad_train.py
-# 通过对抗训练增强模型的泛化性能
-# 比CLUE榜单公开的同数据集上的BERT base的成绩高2%
-# 适用于Keras 2.3.1
+
 
 import json
 import logging
