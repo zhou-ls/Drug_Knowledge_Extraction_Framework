@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/24 11:44
-# @Author : Jclian91
-# @File : keras_func_debug.py
-# @Place : Yangpu, Shanghai
+
 import tensorflow as tf
 from tensorflow.keras import backend as K
 from tensorflow.keras.layers import Input, Add, Lambda, Multiply, Average, average, Flatten

@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time : 2021/3/23 13:24
-# @Author : Jclian91
-# @File : model.py
-# @Place : Yangpu, Shanghai
-# main architecture of R-BERT
+
 from tensorflow.keras.models import Model
 from tensorflow.keras.utils import plot_model
 from tensorflow.keras.layers import Input, Lambda, Dense, Dropout, concatenate, Dot
